@@ -27,8 +27,8 @@ popd || exit
 
 rm -rf .BoardConfig.mk
 case $DEVICE_NAME in
-  pico-plus-sd) ln -s project/cfg/BoardConfig_IPC/BoardConfig-SD_CARD-Buildroot-RV1103_Luckfox_Pico_Plus-IPC.mk .BoardConfig.mk ;;
-  pico-plus-flash) ln -s project/cfg/BoardConfig_IPC/BoardConfig-SPI_NAND-Buildroot-RV1103_Luckfox_Pico_Plus-IPC.mk .BoardConfig.mk ;;
+  pico-mini-b-sd) ln -s project/cfg/BoardConfig_IPC/BoardConfig-SD_CARD-Buildroot-RV1103_Luckfox_Pico_Mini_B-IPC.mk .BoardConfig.mk ;;
+  pico-mini-b-flash) ln -s project/cfg/BoardConfig_IPC/BoardConfig-SPI_NAND-Buildroot-RV1103_Luckfox_Pico_Mini_B-IPC.mk .BoardConfig.mk ;;
   *)
     echo "Invalid device: ${DEVICE_NAME}."
     exit 1
